@@ -1,0 +1,21 @@
+{
+  "name": "prism",
+  "version": "0.1.0",
+  "description": "This library modifify the PrismJS library so it's a better fit for jQuery Terminal.",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jcubic/terminal-prism.git"
+  },
+  "keywords": [],
+  "author": "Jakub T. Jankiewicz <jcubic@onet.pl> (https://jcubic.pl/jakub-jankiewicz/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jcubic/terminal-prism/issues"
+  },
+  "homepage": "https://github.com/jcubic/terminal-prism#readme",
+  "devDependencies": {
+    "prismjs": "^1.20.0"
+  }
+}

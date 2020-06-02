@@ -1,0 +1,5 @@
+.token {
+	 color: var(--color);
+	background: var(--background);
+	--original-color: var(--color);
+}
