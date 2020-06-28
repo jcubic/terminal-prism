@@ -1,6 +1,6 @@
 # Terminal Prism
 
-This library modifify the [PrismJS](https://prismjs.com/) library so it's a better fit
+This library modifify the [PrismJS](https://prismjs.com/) CSS code, so it's a better fit
 for [jQuery Terminal](https://terminal.jcubic.pl/).
 
 ## License
