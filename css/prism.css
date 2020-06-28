@@ -7,8 +7,8 @@
 
 code[class*="language-"],
 pre[class*="language-"] {
-	--color: black;
-	--background: none;
+	color: black;
+	background: none;
 	text-shadow: 0 1px white;
 	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
 	font-size: 1em;
@@ -32,13 +32,13 @@ pre[class*="language-"] {
 pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
 code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
 	text-shadow: none;
-	--background: #b3d4fc;
+	--background: undefined;
 }
 
 pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
 code[class*="language-"]::selection, code[class*="language-"] ::selection {
 	text-shadow: none;
-	--background: #b3d4fc;
+	--background: undefined;
 }
 
 @media print {
@@ -57,7 +57,7 @@ pre[class*="language-"] {
 
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-	--background: #f5f2f0;
+	--background: undefined;
 }
 
 /* Inline code */
@@ -71,11 +71,11 @@ pre[class*="language-"] {
 .token.prolog,
 .token.doctype,
 .token.cdata {
-	--color: slategray;
+	color: slategray;
 }
 
 .token.punctuation {
-	--color: #999;
+	--color: rgba(153,153,153,0.997);
 }
 
 .token.namespace {
@@ -89,7 +89,7 @@ pre[class*="language-"] {
 .token.constant,
 .token.symbol,
 .token.deleted {
-	--color: #905;
+	--color: rgba(153,0,85,0.997);
 }
 
 .token.selector,
@@ -98,7 +98,7 @@ pre[class*="language-"] {
 .token.char,
 .token.builtin,
 .token.inserted {
-	--color: #690;
+	--color: rgba(102,153,0,0.997);
 }
 
 .token.operator,
@@ -106,25 +106,25 @@ pre[class*="language-"] {
 .token.url,
 .language-css .token.string,
 .style .token.string {
-	--color: #9a6e3a;
-	--background: hsla(0, 0%, 100%, .5);
+	--color: undefined;
+	background: hsla(0, 0%, 100%, .5);
 }
 
 .token.atrule,
 .token.attr-value,
 .token.keyword {
-	--color: #07a;
+	--color: rgba(0,119,170,0.997);
 }
 
 .token.function,
 .token.class-name {
-	--color: #DD4A68;
+	--color: rgba(221,74,104,0.997);
 }
 
 .token.regex,
 .token.important,
 .token.variable {
-	--color: #e90;
+	--color: rgba(238,153,0,0.997);
 }
 
 .token.important,

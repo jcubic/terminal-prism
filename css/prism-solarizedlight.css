@@ -31,7 +31,7 @@ green     #859900
 
 code[class*="language-"],
 pre[class*="language-"] {
-	--color: #657b83; /* base00 */
+	--color: undefined; /* base00 */
 	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
 	font-size: 1em;
 	text-align: left;
@@ -54,12 +54,12 @@ pre[class*="language-"] {
 
 pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
 code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
-	--background: #073642; /* base02 */
+	--background: undefined; /* base02 */
 }
 
 pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
 code[class*="language-"]::selection, code[class*="language-"] ::selection {
-	--background: #073642; /* base02 */
+	--background: undefined; /* base02 */
 }
 
 /* Code blocks */
@@ -72,7 +72,7 @@ pre[class*="language-"] {
 
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-	background---color: #fdf6e3; /* base3 */
+	background---color: undefined; /* base3 */
 }
 
 /* Inline code */
@@ -85,11 +85,11 @@ pre[class*="language-"] {
 .token.prolog,
 .token.doctype,
 .token.cdata {
-	--color: #93a1a1; /* base1 */
+	--color: undefined; /* base1 */
 }
 
 .token.punctuation {
-	--color: #586e75; /* base01 */
+	--color: undefined; /* base01 */
 }
 
 .token.namespace {
@@ -103,7 +103,7 @@ pre[class*="language-"] {
 .token.constant,
 .token.symbol,
 .token.deleted {
-	--color: #268bd2; /* blue */
+	--color: undefined; /* blue */
 }
 
 .token.selector,
@@ -113,29 +113,29 @@ pre[class*="language-"] {
 .token.builtin,
 .token.url,
 .token.inserted {
-	--color: #2aa198; /* cyan */
+	--color: undefined; /* cyan */
 }
 
 .token.entity {
-	--color: #657b83; /* base00 */
-	--background: #eee8d5; /* base2 */
+	--color: undefined; /* base00 */
+	--background: undefined; /* base2 */
 }
 
 .token.atrule,
 .token.attr-value,
 .token.keyword {
-	--color: #859900; /* green */
+	--color: undefined; /* green */
 }
 
 .token.function,
 .token.class-name {
-	--color: #b58900; /* yellow */
+	--color: undefined; /* yellow */
 }
 
 .token.regex,
 .token.important,
 .token.variable {
-	--color: #cb4b16; /* orange */
+	--color: undefined; /* orange */
 }
 
 .token.important,

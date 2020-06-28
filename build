@@ -2,8 +2,8 @@ patch=$(cat patch.css);
 
 for file in node_modules/prismjs/themes/prism*; do
    output="css/$(basename $file)";
-   sed -e 's/color:/--color:/g' -e 's/background:/--background:/g' \
-   -e "0,/*\//s%^\([^*]*\)[*]/%\1 Patched by Jakub T. Jankiewicz to fit jQuery Terminal\n\1*/%" $file > $output;
+   ./colors.js < $file | \
+   sed -e "0,/*\//s%^\([^*]*\)[*]/%\1 Patched by Jakub T. Jankiewicz to fit jQuery Terminal\n\1*/%"  > $output;
    grep '* @author' $output > /dev/null && sed -i -e 's/\s*\(Patched by\)/ * \1/' $output;
    echo "$patch" >> $output;
 done

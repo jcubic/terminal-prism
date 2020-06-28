@@ -7,8 +7,8 @@
 
 code[class*="language-"],
 pre[class*="language-"] {
-	--color: white;
-	--background: none;
+	color: white;
+	background: none;
 	text-shadow: 0 -.1em .2em black;
 	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
 	font-size: 1em;
@@ -38,7 +38,7 @@ pre[class*="language-"] {
 
 pre[class*="language-"],
 :not(pre) > code[class*="language-"] {
-	--background: hsl(30, 20%, 25%);
+	background: hsl(30, 20%, 25%);
 }
 
 /* Code blocks */
@@ -64,7 +64,7 @@ pre[class*="language-"] {
 .token.prolog,
 .token.doctype,
 .token.cdata {
-	--color: hsl(30, 20%, 50%);
+	color: hsl(30, 20%, 50%);
 }
 
 .token.punctuation {
@@ -81,7 +81,7 @@ pre[class*="language-"] {
 .token.number,
 .token.constant,
 .token.symbol {
-	--color: hsl(350, 40%, 70%);
+	color: hsl(350, 40%, 70%);
 }
 
 .token.selector,
@@ -90,7 +90,7 @@ pre[class*="language-"] {
 .token.char,
 .token.builtin,
 .token.inserted {
-	--color: hsl(75, 70%, 60%);
+	color: hsl(75, 70%, 60%);
 }
 
 .token.operator,
@@ -99,18 +99,18 @@ pre[class*="language-"] {
 .language-css .token.string,
 .style .token.string,
 .token.variable {
-	--color: hsl(40, 90%, 60%);
+	color: hsl(40, 90%, 60%);
 }
 
 .token.atrule,
 .token.attr-value,
 .token.keyword {
-	--color: hsl(350, 40%, 70%);
+	color: hsl(350, 40%, 70%);
 }
 
 .token.regex,
 .token.important {
-	--color: #e90;
+	--color: rgba(238,153,0,0.997);
 }
 
 .token.important,
@@ -126,7 +126,7 @@ pre[class*="language-"] {
 }
 
 .token.deleted {
-	--color: red;
+	color: red;
 }
 .token {
 	 color: var(--color);
