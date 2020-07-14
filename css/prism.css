@@ -32,13 +32,13 @@ pre[class*="language-"] {
 pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
 code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
 	text-shadow: none;
-	--background: undefined;
+	--background: rgba(179,212,252,0.997);
 }
 
 pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
 code[class*="language-"]::selection, code[class*="language-"] ::selection {
 	text-shadow: none;
-	--background: undefined;
+	--background: rgba(179,212,252,0.997);
 }
 
 @media print {
@@ -57,7 +57,7 @@ pre[class*="language-"] {
 
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-	--background: undefined;
+	--background: rgba(245,242,240,0.997);
 }
 
 /* Inline code */
@@ -106,7 +106,7 @@ pre[class*="language-"] {
 .token.url,
 .language-css .token.string,
 .style .token.string {
-	--color: undefined;
+	--color: rgba(154,110,58,0.997);
 	background: hsla(0, 0%, 100%, .5);
 }
 

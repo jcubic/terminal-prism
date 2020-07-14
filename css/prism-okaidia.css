@@ -7,7 +7,7 @@
 
 code[class*="language-"],
 pre[class*="language-"] {
-	--color: undefined;
+	--color: rgba(248,248,242,0.997);
 	background: none;
 	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
 	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
@@ -39,7 +39,7 @@ pre[class*="language-"] {
 
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-	--background: undefined;
+	--background: rgba(39,40,34,0.997);
 }
 
 /* Inline code */
@@ -57,7 +57,7 @@ pre[class*="language-"] {
 }
 
 .token.punctuation {
-	--color: undefined;
+	--color: rgba(248,248,242,0.997);
 }
 
 .token.namespace {
@@ -69,12 +69,12 @@ pre[class*="language-"] {
 .token.constant,
 .token.symbol,
 .token.deleted {
-	--color: undefined;
+	--color: rgba(249,38,114,0.997);
 }
 
 .token.boolean,
 .token.number {
-	--color: undefined;
+	--color: rgba(174,129,255,0.997);
 }
 
 .token.selector,
@@ -83,7 +83,7 @@ pre[class*="language-"] {
 .token.char,
 .token.builtin,
 .token.inserted {
-	--color: undefined;
+	--color: rgba(166,226,46,0.997);
 }
 
 .token.operator,
@@ -92,23 +92,23 @@ pre[class*="language-"] {
 .language-css .token.string,
 .style .token.string,
 .token.variable {
-	--color: undefined;
+	--color: rgba(248,248,242,0.997);
 }
 
 .token.atrule,
 .token.attr-value,
 .token.function,
 .token.class-name {
-	--color: undefined;
+	--color: rgba(230,219,116,0.997);
 }
 
 .token.keyword {
-	--color: undefined;
+	--color: rgba(102,217,239,0.997);
 }
 
 .token.regex,
 .token.important {
-	--color: undefined;
+	--color: rgba(253,151,31,0.997);
 }
 
 .token.important,

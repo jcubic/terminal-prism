@@ -31,7 +31,7 @@ green     #859900
 
 code[class*="language-"],
 pre[class*="language-"] {
-	--color: undefined; /* base00 */
+	--color: rgba(101,123,131,0.997); /* base00 */
 	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
 	font-size: 1em;
 	text-align: left;
@@ -54,12 +54,12 @@ pre[class*="language-"] {
 
 pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
 code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
-	--background: undefined; /* base02 */
+	--background: rgba(7,54,66,0.997); /* base02 */
 }
 
 pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
 code[class*="language-"]::selection, code[class*="language-"] ::selection {
-	--background: undefined; /* base02 */
+	--background: rgba(7,54,66,0.997); /* base02 */
 }
 
 /* Code blocks */
@@ -72,7 +72,7 @@ pre[class*="language-"] {
 
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-	background---color: undefined; /* base3 */
+	background---color: rgba(253,246,227,0.997); /* base3 */
 }
 
 /* Inline code */
@@ -85,11 +85,11 @@ pre[class*="language-"] {
 .token.prolog,
 .token.doctype,
 .token.cdata {
-	--color: undefined; /* base1 */
+	--color: rgba(147,161,161,0.997); /* base1 */
 }
 
 .token.punctuation {
-	--color: undefined; /* base01 */
+	--color: rgba(88,110,117,0.997); /* base01 */
 }
 
 .token.namespace {
@@ -103,7 +103,7 @@ pre[class*="language-"] {
 .token.constant,
 .token.symbol,
 .token.deleted {
-	--color: undefined; /* blue */
+	--color: rgba(38,139,210,0.997); /* blue */
 }
 
 .token.selector,
@@ -113,29 +113,29 @@ pre[class*="language-"] {
 .token.builtin,
 .token.url,
 .token.inserted {
-	--color: undefined; /* cyan */
+	--color: rgba(42,161,152,0.997); /* cyan */
 }
 
 .token.entity {
-	--color: undefined; /* base00 */
-	--background: undefined; /* base2 */
+	--color: rgba(101,123,131,0.997); /* base00 */
+	--background: rgba(238,232,213,0.997); /* base2 */
 }
 
 .token.atrule,
 .token.attr-value,
 .token.keyword {
-	--color: undefined; /* green */
+	--color: rgba(133,153,0,0.997); /* green */
 }
 
 .token.function,
 .token.class-name {
-	--color: undefined; /* yellow */
+	--color: rgba(181,137,0,0.997); /* yellow */
 }
 
 .token.regex,
 .token.important,
 .token.variable {
-	--color: undefined; /* orange */
+	--color: rgba(203,75,22,0.997); /* orange */
 }
 
 .token.important,
