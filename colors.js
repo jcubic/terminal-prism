@@ -12,8 +12,8 @@ function rgba(hex) {
 var fs = require('fs');
 var data = fs.readFileSync(0, 'utf-8');
 
-data = data.toString().replace(/(color|background)\s*:\s*(#[^;]+)/g, function(_, prop, hex) {
-  return `--${prop}: ${rgba(hex)}`;
+data = data.toString().replace(/(^|\s)(background-color|color|background)\s*:\s*(#[^;]+)/g, function(_, pre, prop, hex) {
+  return `${pre}--${prop}: ${rgba(hex)}`;
 });
 
 process.stdout.write(data);
