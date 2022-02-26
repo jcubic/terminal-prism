@@ -107,6 +107,7 @@ pre[class*="language-"] {
 .language-css .token.string,
 .style .token.string {
 	--color: rgba(154,110,58,0.997);
+	/* This background color was intended by the author of this theme. */
 	background: hsla(0, 0%, 100%, .5);
 }
 

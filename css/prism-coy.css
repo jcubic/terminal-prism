@@ -33,20 +33,22 @@ pre[class*="language-"] {
 	position: relative;
 	margin: .5em 0;
 	overflow: visible;
-	padding: 0;
+	padding: 1px;
 }
-pre[class*="language-"]>code {
+
+pre[class*="language-"] > code {
 	position: relative;
+	z-index: 1;
 	border-left: 10px solid #358ccb;
 	box-shadow: -1px 0px 0px 0px #358ccb, 0px 0px 0px 1px #dfdfdf;
-	background-color: #fdfdfd;
+	--background-color: rgba(253,253,253,0.997);
 	background-image: linear-gradient(transparent 50%, rgba(69, 142, 209, 0.04) 50%);
 	background-size: 3em 3em;
 	background-origin: content-box;
 	background-attachment: local;
 }
 
-code[class*="language"] {
+code[class*="language-"] {
 	max-height: inherit;
 	height: inherit;
 	padding: 0 1em;
@@ -57,7 +59,7 @@ code[class*="language"] {
 /* Margin bottom to accommodate shadow */
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-	background-color: #fdfdfd;
+	--background-color: rgba(253,253,253,0.997);
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
@@ -78,7 +80,6 @@ pre[class*="language-"] {
 pre[class*="language-"]:before,
 pre[class*="language-"]:after {
 	content: '';
-	z-index: -2;
 	display: block;
 	position: absolute;
 	bottom: 0.75em;
@@ -94,7 +95,6 @@ pre[class*="language-"]:after {
 	transform: rotate(-2deg);
 }
 
-:not(pre) > code[class*="language-"]:after,
 pre[class*="language-"]:after {
 	right: 0.75em;
 	left: auto;
@@ -190,13 +190,6 @@ pre[class*="language-"]:after {
 		box-shadow: none;
 	}
 
-}
-
-/* Plugin styles */
-.token.tab:not(:empty):before,
-.token.cr:before,
-.token.lf:before {
-	--color: rgba(224,215,209,0.997);
 }
 
 /* Plugin styles: Line Numbers */

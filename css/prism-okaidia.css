@@ -53,7 +53,7 @@ pre[class*="language-"] {
 .token.prolog,
 .token.doctype,
 .token.cdata {
-	color: slategray;
+	--color: rgba(130,146,162,0.997);
 }
 
 .token.punctuation {
