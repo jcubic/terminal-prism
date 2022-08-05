@@ -7,119 +7,155 @@
 
 code[class*="language-"],
 pre[class*="language-"] {
-	--color: rgba(204,204,204,0.997);
-	background: none;
-	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
-	font-size: 1em;
-	text-align: left;
-	white-space: pre;
-	word-spacing: normal;
-	word-break: normal;
-	word-wrap: normal;
-	line-height: 1.5;
-
-	-moz-tab-size: 4;
-	-o-tab-size: 4;
-	tab-size: 4;
-
-	-webkit-hyphens: none;
-	-moz-hyphens: none;
-	-ms-hyphens: none;
-	hyphens: none;
-
+  --color: rgba(204,204,204,0.997);
+  background: none;
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  font-size: 1em;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
 }
 
 /* Code blocks */
+
 pre[class*="language-"] {
-	padding: 1em;
-	margin: .5em 0;
-	overflow: auto;
+  padding: 1em;
+  margin: .5em 0;
+  overflow: auto;
 }
 
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-	--background: rgba(45,45,45,0.997);
+  --background: rgba(45,45,45,0.997);
 }
 
 /* Inline code */
+
 :not(pre) > code[class*="language-"] {
-	padding: .1em;
-	border-radius: .3em;
-	white-space: normal;
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal;
 }
 
-.token.comment,
-.token.block-comment,
-.token.prolog,
-.token.doctype,
-.token.cdata {
-	--color: rgba(153,153,153,0.997);
+.terminal .token.comment,
+.cmd .token.comment,
+.terminal .token.block-comment,
+.cmd .token.block-comment,
+.terminal .token.prolog,
+.cmd .token.prolog,
+.terminal .token.doctype,
+.cmd .token.doctype,
+.terminal .token.cdata,
+.cmd .token.cdata {
+  --color: rgba(153,153,153,0.997);
 }
 
-.token.punctuation {
-	--color: rgba(204,204,204,0.997);
+.terminal .token.punctuation,
+.cmd .token.punctuation {
+  --color: rgba(204,204,204,0.997);
 }
 
-.token.tag,
-.token.attr-name,
-.token.namespace,
-.token.deleted {
-	--color: rgba(226,119,122,0.997);
+.terminal .token.tag,
+.cmd .token.tag,
+.terminal .token.attr-name,
+.cmd .token.attr-name,
+.terminal .token.namespace,
+.cmd .token.namespace,
+.terminal .token.deleted,
+.cmd .token.deleted {
+  --color: rgba(226,119,122,0.997);
 }
 
-.token.function-name {
-	--color: rgba(97,150,204,0.997);
+.terminal .token.function-name,
+.cmd .token.function-name {
+  --color: rgba(97,150,204,0.997);
 }
 
-.token.boolean,
-.token.number,
-.token.function {
-	--color: rgba(240,141,73,0.997);
+.terminal .token.boolean,
+.cmd .token.boolean,
+.terminal .token.number,
+.cmd .token.number,
+.terminal .token.function,
+.cmd .token.function {
+  --color: rgba(240,141,73,0.997);
 }
 
-.token.property,
-.token.class-name,
-.token.constant,
-.token.symbol {
-	--color: rgba(248,197,85,0.997);
+.terminal .token.property,
+.cmd .token.property,
+.terminal .token.class-name,
+.cmd .token.class-name,
+.terminal .token.constant,
+.cmd .token.constant,
+.terminal .token.symbol,
+.cmd .token.symbol {
+  --color: rgba(248,197,85,0.997);
 }
 
-.token.selector,
-.token.important,
-.token.atrule,
-.token.keyword,
-.token.builtin {
-	--color: rgba(204,153,205,0.997);
+.terminal .token.selector,
+.cmd .token.selector,
+.terminal .token.important,
+.cmd .token.important,
+.terminal .token.atrule,
+.cmd .token.atrule,
+.terminal .token.keyword,
+.cmd .token.keyword,
+.terminal .token.builtin,
+.cmd .token.builtin {
+  --color: rgba(204,153,205,0.997);
 }
 
-.token.string,
-.token.char,
-.token.attr-value,
-.token.regex,
-.token.variable {
-	--color: rgba(126,198,153,0.997);
+.terminal .token.string,
+.cmd .token.string,
+.terminal .token.char,
+.cmd .token.char,
+.terminal .token.attr-value,
+.cmd .token.attr-value,
+.terminal .token.regex,
+.cmd .token.regex,
+.terminal .token.variable,
+.cmd .token.variable {
+  --color: rgba(126,198,153,0.997);
 }
 
-.token.operator,
-.token.entity,
-.token.url {
-	--color: rgba(103,205,204,0.997);
+.terminal .token.operator,
+.cmd .token.operator,
+.terminal .token.entity,
+.cmd .token.entity,
+.terminal .token.url,
+.cmd .token.url {
+  --color: rgba(103,205,204,0.997);
 }
 
-.token.important,
-.token.bold {
-	font-weight: bold;
-}
-.token.italic {
-	font-style: italic;
-}
-
-.token.entity {
-	cursor: help;
+.terminal .token.important,
+.cmd .token.important,
+.terminal .token.bold,
+.cmd .token.bold {
+  font-weight: bold;
 }
 
-.token.inserted {
-	color: green;
+.terminal .token.italic,
+.cmd .token.italic {
+  font-style: italic;
+}
+
+.terminal .token.entity,
+.cmd .token.entity {
+  cursor: help;
+}
+
+.terminal .token.inserted,
+.cmd .token.inserted {
+  color: green;
 }
 .token {
 	 color: var(--color);

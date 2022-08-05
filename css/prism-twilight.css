@@ -4,169 +4,237 @@
  * @author Remy Bach
  * Patched by Jakub T. Jankiewicz to fit jQuery Terminal
  */
+
 code[class*="language-"],
 pre[class*="language-"] {
-	color: white;
-	background: none;
-	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
-	font-size: 1em;
-	text-align: left;
-	text-shadow: 0 -.1em .2em black;
-	white-space: pre;
-	word-spacing: normal;
-	word-break: normal;
-	word-wrap: normal;
-	line-height: 1.5;
-
-	-moz-tab-size: 4;
-	-o-tab-size: 4;
-	tab-size: 4;
-
-	-webkit-hyphens: none;
-	-moz-hyphens: none;
-	-ms-hyphens: none;
-	hyphens: none;
+  color: white;
+  background: none;
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  font-size: 1em;
+  text-align: left;
+  text-shadow: 0 -.1em .2em black;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
 }
 
 pre[class*="language-"],
 :not(pre) > code[class*="language-"] {
-	background: hsl(0, 0%, 8%); /* #141414 */
+  background: hsl(0, 0%, 8%);
+  /* #141414 */
 }
 
 /* Code blocks */
+
 pre[class*="language-"] {
-	border-radius: .5em;
-	border: .3em solid hsl(0, 0%, 33%); /* #282A2B */
-	box-shadow: 1px 1px .5em black inset;
-	margin: .5em 0;
-	overflow: auto;
-	padding: 1em;
+  border-radius: .5em;
+  border: .3em solid hsl(0, 0%, 33%);
+  /* #282A2B */
+  box-shadow: 1px 1px .5em black inset;
+  margin: .5em 0;
+  overflow: auto;
+  padding: 1em;
 }
 
 pre[class*="language-"]::-moz-selection {
-	/* Firefox */
-	background: hsl(200, 4%, 16%); /* #282A2B */
+  /* Firefox */
+  background: hsl(200, 4%, 16%);
+  /* #282A2B */
 }
 
 pre[class*="language-"]::selection {
-	/* Safari */
-	background: hsl(200, 4%, 16%); /* #282A2B */
+  /* Safari */
+  background: hsl(200, 4%, 16%);
+  /* #282A2B */
 }
 
 /* Text Selection colour */
-pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
-code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
-	text-shadow: none;
-	background: hsla(0, 0%, 93%, 0.15); /* #EDEDED */
+
+pre[class*="language-"]::-moz-selection,
+pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection,
+code[class*="language-"] ::-moz-selection {
+  text-shadow: none;
+  background: hsla(0, 0%, 93%, 0.15);
+  /* #EDEDED */
 }
 
-pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
-code[class*="language-"]::selection, code[class*="language-"] ::selection {
-	text-shadow: none;
-	background: hsla(0, 0%, 93%, 0.15); /* #EDEDED */
+pre[class*="language-"]::selection,
+pre[class*="language-"] ::selection,
+code[class*="language-"]::selection,
+code[class*="language-"] ::selection {
+  text-shadow: none;
+  background: hsla(0, 0%, 93%, 0.15);
+  /* #EDEDED */
 }
 
 /* Inline code */
+
 :not(pre) > code[class*="language-"] {
-	border-radius: .3em;
-	border: .13em solid hsl(0, 0%, 33%); /* #545454 */
-	box-shadow: 1px 1px .3em -.1em black inset;
-	padding: .15em .2em .05em;
-	white-space: normal;
+  border-radius: .3em;
+  border: .13em solid hsl(0, 0%, 33%);
+  /* #545454 */
+  box-shadow: 1px 1px .3em -.1em black inset;
+  padding: .15em .2em .05em;
+  white-space: normal;
 }
 
-.token.comment,
-.token.prolog,
-.token.doctype,
-.token.cdata {
-	color: hsl(0, 0%, 47%); /* #777777 */
+.terminal .token.comment,
+.cmd .token.comment,
+.terminal .token.prolog,
+.cmd .token.prolog,
+.terminal .token.doctype,
+.cmd .token.doctype,
+.terminal .token.cdata,
+.cmd .token.cdata {
+  color: hsl(0, 0%, 47%);
+  /* #777777 */
 }
 
-.token.punctuation {
-	opacity: .7;
+.terminal .token.punctuation,
+.cmd .token.punctuation {
+  opacity: .7;
 }
 
-.token.namespace {
-	opacity: .7;
+.terminal .token.namespace,
+.cmd .token.namespace {
+  opacity: .7;
 }
 
-.token.tag,
-.token.boolean,
-.token.number,
-.token.deleted {
-	color: hsl(14, 58%, 55%); /* #CF6A4C */
+.terminal .token.tag,
+.cmd .token.tag,
+.terminal .token.boolean,
+.cmd .token.boolean,
+.terminal .token.number,
+.cmd .token.number,
+.terminal .token.deleted,
+.cmd .token.deleted {
+  color: hsl(14, 58%, 55%);
+  /* #CF6A4C */
 }
 
-.token.keyword,
-.token.property,
-.token.selector,
-.token.constant,
-.token.symbol,
-.token.builtin {
-	color: hsl(53, 89%, 79%); /* #F9EE98 */
+.terminal .token.keyword,
+.cmd .token.keyword,
+.terminal .token.property,
+.cmd .token.property,
+.terminal .token.selector,
+.cmd .token.selector,
+.terminal .token.constant,
+.cmd .token.constant,
+.terminal .token.symbol,
+.cmd .token.symbol,
+.terminal .token.builtin,
+.cmd .token.builtin {
+  color: hsl(53, 89%, 79%);
+  /* #F9EE98 */
 }
 
-.token.attr-name,
-.token.attr-value,
-.token.string,
-.token.char,
-.token.operator,
-.token.entity,
-.token.url,
-.language-css .token.string,
-.style .token.string,
-.token.variable,
-.token.inserted {
-	color: hsl(76, 21%, 52%); /* #8F9D6A */
+.terminal .token.attr-name,
+.cmd .token.attr-name,
+.terminal .token.attr-value,
+.cmd .token.attr-value,
+.terminal .token.string,
+.cmd .token.string,
+.terminal .token.char,
+.cmd .token.char,
+.terminal .token.operator,
+.cmd .token.operator,
+.terminal .token.entity,
+.cmd .token.entity,
+.terminal .token.url,
+.cmd .token.url,
+.terminal .language-css .token.string,
+.cmd .language-css .token.string,
+.terminal .style .token.string,
+.cmd .style .token.string,
+.terminal .token.variable,
+.cmd .token.variable,
+.terminal .token.inserted,
+.cmd .token.inserted {
+  color: hsl(76, 21%, 52%);
+  /* #8F9D6A */
 }
 
-.token.atrule {
-	color: hsl(218, 22%, 55%); /* #7587A6 */
+.terminal .token.atrule,
+.cmd .token.atrule {
+  color: hsl(218, 22%, 55%);
+  /* #7587A6 */
 }
 
-.token.regex,
-.token.important {
-	color: hsl(42, 75%, 65%); /* #E9C062 */
+.terminal .token.regex,
+.cmd .token.regex,
+.terminal .token.important,
+.cmd .token.important {
+  color: hsl(42, 75%, 65%);
+  /* #E9C062 */
 }
 
-.token.important,
-.token.bold {
-	font-weight: bold;
-}
-.token.italic {
-	font-style: italic;
+.terminal .token.important,
+.cmd .token.important,
+.terminal .token.bold,
+.cmd .token.bold {
+  font-weight: bold;
 }
 
-.token.entity {
-	cursor: help;
+.terminal .token.italic,
+.cmd .token.italic {
+  font-style: italic;
+}
+
+.terminal .token.entity,
+.cmd .token.entity {
+  cursor: help;
 }
 
 /* Markup */
-.language-markup .token.tag,
-.language-markup .token.attr-name,
-.language-markup .token.punctuation {
-	color: hsl(33, 33%, 52%); /* #AC885B */
+
+.terminal .language-markup .token.tag,
+.cmd .language-markup .token.tag,
+.terminal .language-markup .token.attr-name,
+.cmd .language-markup .token.attr-name,
+.terminal .language-markup .token.punctuation,
+.cmd .language-markup .token.punctuation {
+  color: hsl(33, 33%, 52%);
+  /* #AC885B */
 }
 
 /* Make the tokens sit above the line highlight so the colours don't look faded. */
-.token {
-	position: relative;
-	z-index: 1;
+
+.terminal .token,
+.cmd .token {
+  position: relative;
+  z-index: 1;
 }
 
 .line-highlight.line-highlight {
-	background: hsla(0, 0%, 33%, 0.25); /* #545454 */
-	background: linear-gradient(to right, hsla(0, 0%, 33%, .1) 70%, hsla(0, 0%, 33%, 0)); /* #545454 */
-	border-bottom: 1px dashed hsl(0, 0%, 33%); /* #545454 */
-	border-top: 1px dashed hsl(0, 0%, 33%); /* #545454 */
-	margin-top: 0.75em; /* Same as .prism’s padding-top */
-	z-index: 0;
+  background: hsla(0, 0%, 33%, 0.25);
+  /* #545454 */
+  background: linear-gradient(to right, hsla(0, 0%, 33%, .1) 70%, hsla(0, 0%, 33%, 0));
+  /* #545454 */
+  border-bottom: 1px dashed hsl(0, 0%, 33%);
+  /* #545454 */
+  border-top: 1px dashed hsl(0, 0%, 33%);
+  /* #545454 */
+  margin-top: 0.75em;
+  /* Same as .prism’s padding-top */
+  z-index: 0;
 }
 
 .line-highlight.line-highlight:before,
 .line-highlight.line-highlight[data-end]:after {
-	background-color: hsl(215, 15%, 59%); /* #8794A6 */
-	color: hsl(24, 20%, 95%); /* #F5F2F0 */
+  background-color: hsl(215, 15%, 59%);
+  /* #8794A6 */
+  color: hsl(24, 20%, 95%);
+  /* #F5F2F0 */
 }
 .token {
 	 color: var(--color);
