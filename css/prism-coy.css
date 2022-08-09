@@ -15,12 +15,12 @@
 .cmd .token.doctype,
 .terminal .token.cdata,
 .cmd .token.cdata {
-  --color: rgba(125,139,153,0.997);
+  --color: rgba(49.02%, 54.51%, 60% , 0.997);
 }
 
 .terminal .token.punctuation,
 .cmd .token.punctuation {
-  --color: rgba(95,99,100,0.997);
+  --color: rgba(37.255%, 38.824%, 39.216% , 0.997);
 }
 
 .terminal .token.property,
@@ -39,7 +39,7 @@
 .cmd .token.symbol,
 .terminal .token.deleted,
 .cmd .token.deleted {
-  --color: rgba(201,44,44,0.997);
+  --color: rgba(78.824%, 17.255%, 17.255% , 0.997);
 }
 
 .terminal .token.selector,
@@ -56,7 +56,7 @@
 .cmd .token.builtin,
 .terminal .token.inserted,
 .cmd .token.inserted {
-  --color: rgba(47,156,10,0.997);
+  --color: rgba(18.431%, 61.176%, 3.9216% , 0.997);
 }
 
 .terminal .token.operator,
@@ -67,8 +67,7 @@
 .cmd .token.url,
 .terminal .token.variable,
 .cmd .token.variable {
-  --color: rgba(166,127,89,0.997);
-  background: rgba(255, 255, 255, 0.5);
+  --color: rgba(65.098%, 49.804%, 34.902% , 0.997);
 }
 
 .terminal .token.atrule,
@@ -79,22 +78,21 @@
 .cmd .token.keyword,
 .terminal .token.class-name,
 .cmd .token.class-name {
-  --color: rgba(25,144,184,0.997);
+  --color: rgba(9.8039%, 56.471%, 72.157% , 0.997);
 }
 
 .terminal .token.regex,
 .cmd .token.regex,
 .terminal .token.important,
 .cmd .token.important {
-  --color: rgba(238,153,0,0.997);
+  --color: rgba(93.333%, 60%, 0% , 0.997);
 }
 
 .terminal .language-css .token.string,
 .cmd .language-css .token.string,
 .terminal .style .token.string,
 .cmd .style .token.string {
-  --color: rgba(166,127,89,0.997);
-  background: rgba(255, 255, 255, 0.5);
+  --color: rgba(65.098%, 49.804%, 34.902% , 0.997);
 }
 
 .terminal .token.important,

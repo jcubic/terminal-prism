@@ -13,7 +13,7 @@
 .cmd .token.doctype,
 .terminal .token.cdata,
 .cmd .token.cdata {
-  color: hsl(30, 20%, 50%);
+  --color: hsl(30 20% 50% / 0.997);
 }
 
 .terminal .token.punctuation,
@@ -38,7 +38,7 @@
 .cmd .token.constant,
 .terminal .token.symbol,
 .cmd .token.symbol {
-  color: hsl(350, 40%, 70%);
+  --color: hsl(350 40% 70% / 0.997);
 }
 
 .terminal .token.selector,
@@ -53,7 +53,7 @@
 .cmd .token.builtin,
 .terminal .token.inserted,
 .cmd .token.inserted {
-  color: hsl(75, 70%, 60%);
+  --color: hsl(75 70% 60% / 0.997);
 }
 
 .terminal .token.operator,
@@ -68,7 +68,7 @@
 .cmd .style .token.string,
 .terminal .token.variable,
 .cmd .token.variable {
-  color: hsl(40, 90%, 60%);
+  --color: hsl(40 90% 60% / 0.997);
 }
 
 .terminal .token.atrule,
@@ -77,14 +77,14 @@
 .cmd .token.attr-value,
 .terminal .token.keyword,
 .cmd .token.keyword {
-  color: hsl(350, 40%, 70%);
+  --color: hsl(350 40% 70% / 0.997);
 }
 
 .terminal .token.regex,
 .cmd .token.regex,
 .terminal .token.important,
 .cmd .token.important {
-  --color: rgba(238,153,0,0.997);
+  --color: rgba(93.333%, 60%, 0% , 0.997);
 }
 
 .terminal .token.important,
@@ -106,7 +106,7 @@
 
 .terminal .token.deleted,
 .cmd .token.deleted {
-  color: red;
+  --color: rgba(100%, 0%, 0% , 0.997);
 }
 .token {
 	 color: var(--color);

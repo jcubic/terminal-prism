@@ -1,8 +1,9 @@
 {
   "name": "terminal-prism",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "This library modifify the PrismJS library so it's a better fit for jQuery Terminal.",
   "main": "index.js",
+  "type": "module",
   "scripts": {},
   "repository": {
     "type": "git",
@@ -16,7 +17,8 @@
   },
   "homepage": "https://github.com/jcubic/terminal-prism#readme",
   "devDependencies": {
+    "css": "^3.0.0",
     "prismjs": "^1.28.0",
-    "css": "^3.0.0"
+    "colorjs.io": "^0.4.0"
   }
 }

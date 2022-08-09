@@ -13,12 +13,12 @@
 .cmd .token.doctype,
 .terminal .token.cdata,
 .cmd .token.cdata {
-  color: slategray;
+  --color: rgba(43.922%, 50.196%, 56.471% , 0.997);
 }
 
 .terminal .token.punctuation,
 .cmd .token.punctuation {
-  --color: rgba(153,153,153,0.997);
+  --color: rgba(60%, 60%, 60% , 0.997);
 }
 
 .terminal .token.namespace,
@@ -40,7 +40,7 @@
 .cmd .token.symbol,
 .terminal .token.deleted,
 .cmd .token.deleted {
-  --color: rgba(153,0,85,0.997);
+  --color: rgba(60%, 0%, 33.333% , 0.997);
 }
 
 .terminal .token.selector,
@@ -55,7 +55,7 @@
 .cmd .token.builtin,
 .terminal .token.inserted,
 .cmd .token.inserted {
-  --color: rgba(102,153,0,0.997);
+  --color: rgba(40%, 60%, 0% , 0.997);
 }
 
 .terminal .token.operator,
@@ -68,9 +68,8 @@
 .cmd .language-css .token.string,
 .terminal .style .token.string,
 .cmd .style .token.string {
-  --color: rgba(154,110,58,0.997);
+  --color: rgba(60.392%, 43.137%, 22.745% , 0.997);
   /* This background color was intended by the author of this theme. */
-  background: hsla(0, 0%, 100%, .5);
 }
 
 .terminal .token.atrule,
@@ -79,14 +78,14 @@
 .cmd .token.attr-value,
 .terminal .token.keyword,
 .cmd .token.keyword {
-  --color: rgba(0,119,170,0.997);
+  --color: rgba(0%, 46.667%, 66.667% , 0.997);
 }
 
 .terminal .token.function,
 .cmd .token.function,
 .terminal .token.class-name,
 .cmd .token.class-name {
-  --color: rgba(221,74,104,0.997);
+  --color: rgba(86.667%, 29.02%, 40.784% , 0.997);
 }
 
 .terminal .token.regex,
@@ -95,7 +94,7 @@
 .cmd .token.important,
 .terminal .token.variable,
 .cmd .token.variable {
-  --color: rgba(238,153,0,0.997);
+  --color: rgba(93.333%, 60%, 0% , 0.997);
 }
 
 .terminal .token.important,

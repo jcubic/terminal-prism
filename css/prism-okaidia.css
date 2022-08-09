@@ -6,12 +6,12 @@
 .cmd .token.doctype,
 .terminal .token.cdata,
 .cmd .token.cdata {
-  --color: rgba(130,146,162,0.997);
+  --color: rgba(50.98%, 57.255%, 63.529% , 0.997);
 }
 
 .terminal .token.punctuation,
 .cmd .token.punctuation {
-  --color: rgba(248,248,242,0.997);
+  --color: rgba(97.255%, 97.255%, 94.902% , 0.997);
 }
 
 .terminal .token.namespace,
@@ -29,14 +29,14 @@
 .cmd .token.symbol,
 .terminal .token.deleted,
 .cmd .token.deleted {
-  --color: rgba(249,38,114,0.997);
+  --color: rgba(97.647%, 14.902%, 44.706% , 0.997);
 }
 
 .terminal .token.boolean,
 .cmd .token.boolean,
 .terminal .token.number,
 .cmd .token.number {
-  --color: rgba(174,129,255,0.997);
+  --color: rgba(68.235%, 50.588%, 100% , 0.997);
 }
 
 .terminal .token.selector,
@@ -51,7 +51,7 @@
 .cmd .token.builtin,
 .terminal .token.inserted,
 .cmd .token.inserted {
-  --color: rgba(166,226,46,0.997);
+  --color: rgba(65.098%, 88.627%, 18.039% , 0.997);
 }
 
 .terminal .token.operator,
@@ -66,7 +66,7 @@
 .cmd .style .token.string,
 .terminal .token.variable,
 .cmd .token.variable {
-  --color: rgba(248,248,242,0.997);
+  --color: rgba(97.255%, 97.255%, 94.902% , 0.997);
 }
 
 .terminal .token.atrule,
@@ -77,19 +77,19 @@
 .cmd .token.function,
 .terminal .token.class-name,
 .cmd .token.class-name {
-  --color: rgba(230,219,116,0.997);
+  --color: rgba(90.196%, 85.882%, 45.49% , 0.997);
 }
 
 .terminal .token.keyword,
 .cmd .token.keyword {
-  --color: rgba(102,217,239,0.997);
+  --color: rgba(40%, 85.098%, 93.725% , 0.997);
 }
 
 .terminal .token.regex,
 .cmd .token.regex,
 .terminal .token.important,
 .cmd .token.important {
-  --color: rgba(253,151,31,0.997);
+  --color: rgba(99.216%, 59.216%, 12.157% , 0.997);
 }
 
 .terminal .token.important,
