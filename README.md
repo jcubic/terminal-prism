@@ -6,4 +6,4 @@ for [jQuery Terminal](https://terminal.jcubic.pl/).
 ## License
 
 Released under [MIT](http://opensource.org/licenses/MIT) license<br/>
-Copyright (c) 2020-2022 [Jakub T. Jankiewicz](https://jcubic.pl/me)
+Copyright (c) 2020-2024 [Jakub T. Jankiewicz](https://jakub.jankiewicz.org)
