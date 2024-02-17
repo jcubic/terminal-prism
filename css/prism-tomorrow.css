@@ -7,112 +7,148 @@
 
 .terminal .token.comment,
 .cmd .token.comment,
+.terminal-external .token.comment,
 .terminal .token.block-comment,
 .cmd .token.block-comment,
+.terminal-external .token.block-comment,
 .terminal .token.prolog,
 .cmd .token.prolog,
+.terminal-external .token.prolog,
 .terminal .token.doctype,
 .cmd .token.doctype,
+.terminal-external .token.doctype,
 .terminal .token.cdata,
-.cmd .token.cdata {
+.cmd .token.cdata,
+.terminal-external .token.cdata {
   --color: rgba(60%, 60%, 60% , 0.997);
 }
 
 .terminal .token.punctuation,
-.cmd .token.punctuation {
+.cmd .token.punctuation,
+.terminal-external .token.punctuation {
   --color: rgba(80%, 80%, 80% , 0.997);
 }
 
 .terminal .token.tag,
 .cmd .token.tag,
+.terminal-external .token.tag,
 .terminal .token.attr-name,
 .cmd .token.attr-name,
+.terminal-external .token.attr-name,
 .terminal .token.namespace,
 .cmd .token.namespace,
+.terminal-external .token.namespace,
 .terminal .token.deleted,
-.cmd .token.deleted {
+.cmd .token.deleted,
+.terminal-external .token.deleted {
   --color: rgba(88.627%, 46.667%, 47.843% , 0.997);
 }
 
 .terminal .token.function-name,
-.cmd .token.function-name {
+.cmd .token.function-name,
+.terminal-external .token.function-name {
   --color: rgba(38.039%, 58.824%, 80% , 0.997);
 }
 
 .terminal .token.boolean,
 .cmd .token.boolean,
+.terminal-external .token.boolean,
 .terminal .token.number,
 .cmd .token.number,
+.terminal-external .token.number,
 .terminal .token.function,
-.cmd .token.function {
+.cmd .token.function,
+.terminal-external .token.function {
   --color: rgba(94.118%, 55.294%, 28.627% , 0.997);
 }
 
 .terminal .token.property,
 .cmd .token.property,
+.terminal-external .token.property,
 .terminal .token.class-name,
 .cmd .token.class-name,
+.terminal-external .token.class-name,
 .terminal .token.constant,
 .cmd .token.constant,
+.terminal-external .token.constant,
 .terminal .token.symbol,
-.cmd .token.symbol {
+.cmd .token.symbol,
+.terminal-external .token.symbol {
   --color: rgba(97.255%, 77.255%, 33.333% , 0.997);
 }
 
 .terminal .token.selector,
 .cmd .token.selector,
+.terminal-external .token.selector,
 .terminal .token.important,
 .cmd .token.important,
+.terminal-external .token.important,
 .terminal .token.atrule,
 .cmd .token.atrule,
+.terminal-external .token.atrule,
 .terminal .token.keyword,
 .cmd .token.keyword,
+.terminal-external .token.keyword,
 .terminal .token.builtin,
-.cmd .token.builtin {
+.cmd .token.builtin,
+.terminal-external .token.builtin {
   --color: rgba(80%, 60%, 80.392% , 0.997);
 }
 
 .terminal .token.string,
 .cmd .token.string,
+.terminal-external .token.string,
 .terminal .token.char,
 .cmd .token.char,
+.terminal-external .token.char,
 .terminal .token.attr-value,
 .cmd .token.attr-value,
+.terminal-external .token.attr-value,
 .terminal .token.regex,
 .cmd .token.regex,
+.terminal-external .token.regex,
 .terminal .token.variable,
-.cmd .token.variable {
+.cmd .token.variable,
+.terminal-external .token.variable {
   --color: rgba(49.412%, 77.647%, 60% , 0.997);
 }
 
 .terminal .token.operator,
 .cmd .token.operator,
+.terminal-external .token.operator,
 .terminal .token.entity,
 .cmd .token.entity,
+.terminal-external .token.entity,
 .terminal .token.url,
-.cmd .token.url {
+.cmd .token.url,
+.terminal-external .token.url {
   --color: rgba(40.392%, 80.392%, 80% , 0.997);
 }
 
 .terminal .token.important,
 .cmd .token.important,
+.terminal-external .token.important,
 .terminal .token.bold,
-.cmd .token.bold {
+.cmd .token.bold,
+.terminal-external .token.bold {
   font-weight: bold;
 }
 
 .terminal .token.italic,
-.cmd .token.italic {
+.cmd .token.italic,
+.terminal-external .token.italic {
   font-style: italic;
 }
 
 .terminal .token.entity,
-.cmd .token.entity {
+.cmd .token.entity,
+.terminal-external .token.entity {
   cursor: help;
 }
 
 .terminal .token.inserted,
-.cmd .token.inserted {
+.cmd .token.inserted,
+.terminal-external .token.inserted {
   --color: rgba(0%, 50.196%, 0% , 0.997);
 }
 .token {

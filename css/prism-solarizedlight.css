@@ -1,64 +1,85 @@
 .terminal .token.comment,
 .cmd .token.comment,
+.terminal-external .token.comment,
 .terminal .token.prolog,
 .cmd .token.prolog,
+.terminal-external .token.prolog,
 .terminal .token.doctype,
 .cmd .token.doctype,
+.terminal-external .token.doctype,
 .terminal .token.cdata,
-.cmd .token.cdata {
+.cmd .token.cdata,
+.terminal-external .token.cdata {
   --color: rgba(57.647%, 63.137%, 63.137% , 0.997);
   /* base1 */
 }
 
 .terminal .token.punctuation,
-.cmd .token.punctuation {
+.cmd .token.punctuation,
+.terminal-external .token.punctuation {
   --color: rgba(34.51%, 43.137%, 45.882% , 0.997);
   /* base01 */
 }
 
 .terminal .token.namespace,
-.cmd .token.namespace {
+.cmd .token.namespace,
+.terminal-external .token.namespace {
   opacity: .7;
 }
 
 .terminal .token.property,
 .cmd .token.property,
+.terminal-external .token.property,
 .terminal .token.tag,
 .cmd .token.tag,
+.terminal-external .token.tag,
 .terminal .token.boolean,
 .cmd .token.boolean,
+.terminal-external .token.boolean,
 .terminal .token.number,
 .cmd .token.number,
+.terminal-external .token.number,
 .terminal .token.constant,
 .cmd .token.constant,
+.terminal-external .token.constant,
 .terminal .token.symbol,
 .cmd .token.symbol,
+.terminal-external .token.symbol,
 .terminal .token.deleted,
-.cmd .token.deleted {
+.cmd .token.deleted,
+.terminal-external .token.deleted {
   --color: rgba(14.902%, 54.51%, 82.353% , 0.997);
   /* blue */
 }
 
 .terminal .token.selector,
 .cmd .token.selector,
+.terminal-external .token.selector,
 .terminal .token.attr-name,
 .cmd .token.attr-name,
+.terminal-external .token.attr-name,
 .terminal .token.string,
 .cmd .token.string,
+.terminal-external .token.string,
 .terminal .token.char,
 .cmd .token.char,
+.terminal-external .token.char,
 .terminal .token.builtin,
 .cmd .token.builtin,
+.terminal-external .token.builtin,
 .terminal .token.url,
 .cmd .token.url,
+.terminal-external .token.url,
 .terminal .token.inserted,
-.cmd .token.inserted {
+.cmd .token.inserted,
+.terminal-external .token.inserted {
   --color: rgba(16.471%, 63.137%, 59.608% , 0.997);
   /* cyan */
 }
 
 .terminal .token.entity,
-.cmd .token.entity {
+.cmd .token.entity,
+.terminal-external .token.entity {
   --color: rgba(39.608%, 48.235%, 51.373% , 0.997);
   /* base00 */
   /* base2 */
@@ -66,46 +87,58 @@
 
 .terminal .token.atrule,
 .cmd .token.atrule,
+.terminal-external .token.atrule,
 .terminal .token.attr-value,
 .cmd .token.attr-value,
+.terminal-external .token.attr-value,
 .terminal .token.keyword,
-.cmd .token.keyword {
+.cmd .token.keyword,
+.terminal-external .token.keyword {
   --color: rgba(52.157%, 60%, 0% , 0.997);
   /* green */
 }
 
 .terminal .token.function,
 .cmd .token.function,
+.terminal-external .token.function,
 .terminal .token.class-name,
-.cmd .token.class-name {
+.cmd .token.class-name,
+.terminal-external .token.class-name {
   --color: rgba(70.98%, 53.725%, 0% , 0.997);
   /* yellow */
 }
 
 .terminal .token.regex,
 .cmd .token.regex,
+.terminal-external .token.regex,
 .terminal .token.important,
 .cmd .token.important,
+.terminal-external .token.important,
 .terminal .token.variable,
-.cmd .token.variable {
+.cmd .token.variable,
+.terminal-external .token.variable {
   --color: rgba(79.608%, 29.412%, 8.6275% , 0.997);
   /* orange */
 }
 
 .terminal .token.important,
 .cmd .token.important,
+.terminal-external .token.important,
 .terminal .token.bold,
-.cmd .token.bold {
+.cmd .token.bold,
+.terminal-external .token.bold {
   font-weight: bold;
 }
 
 .terminal .token.italic,
-.cmd .token.italic {
+.cmd .token.italic,
+.terminal-external .token.italic {
   font-style: italic;
 }
 
 .terminal .token.entity,
-.cmd .token.entity {
+.cmd .token.entity,
+.terminal-external .token.entity {
   cursor: help;
 }
 .token {

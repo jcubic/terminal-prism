@@ -7,123 +7,161 @@
 
 .terminal .token.comment,
 .cmd .token.comment,
+.terminal-external .token.comment,
 .terminal .token.prolog,
 .cmd .token.prolog,
+.terminal-external .token.prolog,
 .terminal .token.doctype,
 .cmd .token.doctype,
+.terminal-external .token.doctype,
 .terminal .token.cdata,
-.cmd .token.cdata {
+.cmd .token.cdata,
+.terminal-external .token.cdata {
   --color: hsl(0 0% 47% / 0.997);
   /* #777777 */
 }
 
 .terminal .token.punctuation,
-.cmd .token.punctuation {
+.cmd .token.punctuation,
+.terminal-external .token.punctuation {
   opacity: .7;
 }
 
 .terminal .token.namespace,
-.cmd .token.namespace {
+.cmd .token.namespace,
+.terminal-external .token.namespace {
   opacity: .7;
 }
 
 .terminal .token.tag,
 .cmd .token.tag,
+.terminal-external .token.tag,
 .terminal .token.boolean,
 .cmd .token.boolean,
+.terminal-external .token.boolean,
 .terminal .token.number,
 .cmd .token.number,
+.terminal-external .token.number,
 .terminal .token.deleted,
-.cmd .token.deleted {
+.cmd .token.deleted,
+.terminal-external .token.deleted {
   --color: hsl(14 58% 55% / 0.997);
   /* #CF6A4C */
 }
 
 .terminal .token.keyword,
 .cmd .token.keyword,
+.terminal-external .token.keyword,
 .terminal .token.property,
 .cmd .token.property,
+.terminal-external .token.property,
 .terminal .token.selector,
 .cmd .token.selector,
+.terminal-external .token.selector,
 .terminal .token.constant,
 .cmd .token.constant,
+.terminal-external .token.constant,
 .terminal .token.symbol,
 .cmd .token.symbol,
+.terminal-external .token.symbol,
 .terminal .token.builtin,
-.cmd .token.builtin {
+.cmd .token.builtin,
+.terminal-external .token.builtin {
   --color: hsl(53 89% 79% / 0.997);
   /* #F9EE98 */
 }
 
 .terminal .token.attr-name,
 .cmd .token.attr-name,
+.terminal-external .token.attr-name,
 .terminal .token.attr-value,
 .cmd .token.attr-value,
+.terminal-external .token.attr-value,
 .terminal .token.string,
 .cmd .token.string,
+.terminal-external .token.string,
 .terminal .token.char,
 .cmd .token.char,
+.terminal-external .token.char,
 .terminal .token.operator,
 .cmd .token.operator,
+.terminal-external .token.operator,
 .terminal .token.entity,
 .cmd .token.entity,
+.terminal-external .token.entity,
 .terminal .token.url,
 .cmd .token.url,
+.terminal-external .token.url,
 .terminal .language-css .token.string,
 .cmd .language-css .token.string,
+.terminal-external .language-css .token.string,
 .terminal .style .token.string,
 .cmd .style .token.string,
+.terminal-external .style .token.string,
 .terminal .token.variable,
 .cmd .token.variable,
+.terminal-external .token.variable,
 .terminal .token.inserted,
-.cmd .token.inserted {
+.cmd .token.inserted,
+.terminal-external .token.inserted {
   --color: hsl(76 21% 52% / 0.997);
   /* #8F9D6A */
 }
 
 .terminal .token.atrule,
-.cmd .token.atrule {
+.cmd .token.atrule,
+.terminal-external .token.atrule {
   --color: hsl(218 22% 55% / 0.997);
   /* #7587A6 */
 }
 
 .terminal .token.regex,
 .cmd .token.regex,
+.terminal-external .token.regex,
 .terminal .token.important,
-.cmd .token.important {
+.cmd .token.important,
+.terminal-external .token.important {
   --color: hsl(42 75% 65% / 0.997);
   /* #E9C062 */
 }
 
 .terminal .token.important,
 .cmd .token.important,
+.terminal-external .token.important,
 .terminal .token.bold,
-.cmd .token.bold {
+.cmd .token.bold,
+.terminal-external .token.bold {
   font-weight: bold;
 }
 
 .terminal .token.italic,
-.cmd .token.italic {
+.cmd .token.italic,
+.terminal-external .token.italic {
   font-style: italic;
 }
 
 .terminal .token.entity,
-.cmd .token.entity {
+.cmd .token.entity,
+.terminal-external .token.entity {
   cursor: help;
 }
 
 .terminal .language-markup .token.tag,
 .cmd .language-markup .token.tag,
+.terminal-external .language-markup .token.tag,
 .terminal .language-markup .token.attr-name,
 .cmd .language-markup .token.attr-name,
+.terminal-external .language-markup .token.attr-name,
 .terminal .language-markup .token.punctuation,
-.cmd .language-markup .token.punctuation {
+.cmd .language-markup .token.punctuation,
+.terminal-external .language-markup .token.punctuation {
   --color: hsl(33 33% 52% / 0.997);
   /* #AC885B */
 }
 
 .terminal .token,
-.cmd .token {
+.cmd .token,
+.terminal-external .token {
   position: relative;
   z-index: 1;
 }

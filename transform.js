@@ -15,7 +15,7 @@ ast.stylesheet.rules = ast.stylesheet.rules.map(rule => {
         }
         const selectors = rule.selectors.flatMap(selector => {
             if (selector.match(/token/)) {
-                return [`.terminal ${selector}`, `.cmd ${selector}`];
+                return [`.terminal ${selector}`, `.cmd ${selector}`, `.terminal-external ${selector}`];
             }
             return selector;
         });
