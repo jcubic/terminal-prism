@@ -185,8 +185,10 @@
   --color: hsl(24 20% 95% / 0.997);
   /* #F5F2F0 */
 }
-.token {
-	 color: var(--color);
-	background: var(--background);
-	--original-color: var(--color);
+.terminal .token,
+.cmd .token,
+.terminal-external .token {
+    color: var(--color);
+    background: var(--background);
+    --original-color: var(--color);
 }

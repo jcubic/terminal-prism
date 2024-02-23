@@ -141,8 +141,10 @@
 .terminal-external .token.entity {
   cursor: help;
 }
-.token {
-	 color: var(--color);
-	background: var(--background);
-	--original-color: var(--color);
+.terminal .token,
+.cmd .token,
+.terminal-external .token {
+    color: var(--color);
+    background: var(--background);
+    --original-color: var(--color);
 }

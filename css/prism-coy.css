@@ -157,8 +157,10 @@
 .terminal-external .token.namespace {
   opacity: .7;
 }
-.token {
-	 color: var(--color);
-	background: var(--background);
-	--original-color: var(--color);
+.terminal .token,
+.cmd .token,
+.terminal-external .token {
+    color: var(--color);
+    background: var(--background);
+    --original-color: var(--color);
 }

@@ -151,8 +151,10 @@
 .terminal-external .token.inserted {
   --color: rgba(0%, 50.196%, 0% , 0.997);
 }
-.token {
-	 color: var(--color);
-	background: var(--background);
-	--original-color: var(--color);
+.terminal .token,
+.cmd .token,
+.terminal-external .token {
+    color: var(--color);
+    background: var(--background);
+    --original-color: var(--color);
 }

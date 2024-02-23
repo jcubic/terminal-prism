@@ -142,8 +142,10 @@
 .terminal-external .token.deleted {
   --color: rgba(100%, 0%, 0% , 0.997);
 }
-.token {
-	 color: var(--color);
-	background: var(--background);
-	--original-color: var(--color);
+.terminal .token,
+.cmd .token,
+.terminal-external .token {
+    color: var(--color);
+    background: var(--background);
+    --original-color: var(--color);
 }
