@@ -1,6 +1,6 @@
 {
   "name": "terminal-prism",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "This library modifify the PrismJS library so it's a better fit for jQuery Terminal.",
   "main": "index.js",
   "type": "module",
